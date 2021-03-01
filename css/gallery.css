@@ -1,0 +1,22 @@
+.gallerypadding {
+    padding-top: 20vh;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imgstyle {
+    padding-bottom: 5%;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 1vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallerypadding {
+        padding-top: 5vh;
+    }
+}

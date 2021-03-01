@@ -19,12 +19,13 @@ body {
     padding-top: 5vh;
     font-size: 8vh;
     color: white;
+    margin-bottom: 0;
 }
 
 .description {
     font-family: Roboto, sans-serif;
     text-align: center;
-    padding-top: 1vh;
+    padding-top: 0.1vh;
     font-size: 3vh;
     color: white;
 }
@@ -32,65 +33,37 @@ body {
 .navbar {
     z-index: 10;
     background-color: #333;
-    top: 0;
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 6.5vh;
+    text-align: center;
 }
 
 .navbar a {
     font-family: Roboto, sans-serif;
+    display: inline-block;
+    padding: 1.4vh 1.6vh;
     color: white;
     text-decoration: none;
     font-size: 2vh;
-    display: block;
-    padding: 1.4vh 1.6vh;
 }
 
 .navbar a:hover {
     background-color: #222;
 }
 
-a .active {
-    background-color: #222;
-}
-
 .thebars {
-    font-size: 4vh;
-    padding: 1.4vh 1.6vh;
-    color:white;
-}
-
-.thebars:hover {
-    color: #111;
+    font-size: 0;
+    color: white;
 }
 
 .mobilenav {
     z-index: 321;
+    display: none;
 }
 
 .mobilenav a {
-    font-family: Roboto, sans-serif;
     display: none;
-    padding: 1.4vh 1.6vh;
-    color: white;
-    text-decoration: none;
-    font-size: 2vh;
-    margin-top: 1vh;
-}
-
-.mobilenav:hover {
-    left: 0;
-    top: 0;
-    background-color: #333;
-    position: fixed;
-    width: 20vh;
-    height: 27vh;
-    border-right: #222 1px solid;
-}
-
-.mobilenav:hover a {
-    display: block;
 }
 
 .fadeinanimate {
@@ -111,6 +84,141 @@ a .active {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+.underpage {
+    height: 100%;
+    width: 100%;
+    margin-top: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-color: #ff253a;
+    margin-bottom: 0.1vh;
+}
+
+.welcome-underpage {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    padding-top: 40vh;
+    font-size: 8vh;
+    color: white;
+}
+
+.description-underpage {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    padding-top: 0.1vh;
+    font-size: 3vh;
+    color: white;
+}
+
+.referencelink {
+    color: white;
+}
+
+.contacttext1 {
+    font-family: Roboto, sans-serif;
+    text-align: left;
+    padding-top: 8vh;
+    padding-left: 30vw;
+    font-size: 2vh;
+    color: white;
+}
+
+.contacttext2 {
+    font-family: Roboto, sans-serif;
+    text-align: left;
+    padding-left: 30vw;
+    font-size: 2vh;
+    color: white;
+}
+
+.contacttext3 {
+    font-family: Roboto, sans-serif;
+    text-align: left;
+    padding-top: 3vh;
+    padding-left: 30vw;
+    font-size: 2vh;
+    color: white;
+}
+
+.mapcontainer {
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.googlemap {
+    height: 30vh;
+    width: 60vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .mobilenav:hover {
+        left: 0;
+        top: 0;
+        background-color: #333;
+        position: fixed;
+        width: 20vh;
+        height: 27vh;
+        border-right: #222 1px solid;
+    }
+
+    .navbar #links {
+        display: none;
+    }
+
+    .thebars {
+        font-size: 4vh;
+        padding: 1.4vh 1.6vh;
+    }
+
+    .thebars:hover {
+        color: #111;
+    }
+
+    .thelinks:hover {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 6.5vh;
+        text-align: unset;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 1.4vh 1.6vh;
+        color: white
+    }
+
+    .mobilenav a {
+        font-family: Roboto, sans-serif;
+        display: none;
+        padding: 1.4vh 1.6vh;
+        color: white;
+        text-decoration: none;
+        font-size: 2vh;
+        margin-top: 1vh;
+    }
+
+    .mobilenav:hover a {
+        display: block;
+    }
+
+    .contacttext1 {
+        padding-left: 7vh;
+    }
+
+    .contacttext2 {
+        padding-left: 7vh;
+    }
+
+    .contacttext3 {
+        padding-left: 3vh;
+    }
 }
 
 @keyframes fadein {
